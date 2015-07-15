@@ -1,6 +1,7 @@
 package com.gracker.tabfragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.ViewGroup;
@@ -12,10 +13,11 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.and.netease.utils.MoveBg;
 
-import fragment_content.Contentfragment;
+import fragment_content.BookDetailFragment;
+import fragment_content.BookListFragment;
 import fragment_content.TopBarFragment;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements BookListFragment.Callbacks{
 
     RadioGroup radioGroup;
     RadioButton radioButton;
@@ -31,8 +33,8 @@ public class MainActivity extends Activity {
 
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
-            Contentfragment fragment = (Contentfragment) getFragmentManager()
-                    .findFragmentById(R.id.content_fragment);
+            BookListFragment bookListFragment = (BookListFragment) getFragmentManager()
+                    .findFragmentById(R.id.book_list_fragment);
             TopBarFragment fragmentTopic = (TopBarFragment) getFragmentManager()
                     .findFragmentById(R.id.content_fragment_top);
             moveWidth = radioButton.getWidth();
@@ -40,31 +42,31 @@ public class MainActivity extends Activity {
 
             switch (checkedId) {
                 case R.id.radio_news:
-                    fragment.changeContent(0);
+//                    fragment.changeContent(0);
                     fragmentTopic.changeContent(0);
                     MoveBg.moveFrontBg(img, startLeft + paddingLeft, 0, 0, 0);
                     startLeft = paddingLeft;
                     break;
                 case R.id.radio_topic:
-                    fragment.changeContent(1);
+//                    fragment.changeContent(1);
                     fragmentTopic.changeContent(1);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth, 0, 0);
                     startLeft = moveWidth;
                     break;
                 case R.id.radio_pic:
-                    fragment.changeContent(2);
+//                    fragment.changeContent(2);
                     fragmentTopic.changeContent(2);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 2, 0, 0);
                     startLeft = moveWidth * 2;
                     break;
                 case R.id.radio_follow:
-                    fragment.changeContent(3);
+//                    fragment.changeContent(3);
                     fragmentTopic.changeContent(3);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 3, 0, 0);
                     startLeft = moveWidth * 3;
                     break;
                 case R.id.radio_vote:
-                    fragment.changeContent(4);
+//                    fragment.changeContent(4);
                     fragmentTopic.changeContent(4);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 4, 0, 0);
                     startLeft = moveWidth * 4;
@@ -125,5 +127,16 @@ public class MainActivity extends Activity {
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onItemSelected(String id) {
+
+        // 如果是小屏幕，这需要跳转到另外一个Activity中显示详情
+        Intent detailIntent = new Intent(this, BookDetailActivity.class);
+        // 通过Intent的Extra传递传输
+        detailIntent.putExtra(BookDetailFragment.ITEM_ID, id);
+        // 启动Activity
+        startActivity(detailIntent);
     }
 }

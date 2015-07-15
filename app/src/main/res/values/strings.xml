@@ -1,9 +1,9 @@
 <resources>
 
-    <string name="app_name">TabFragment</string>
+    <string name="app_name">仿网易新闻</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">仿网易新闻</string>
 
     <string name="title_news_category_tops">头条</string>
     <string name="title_news_category_sport">体育</string>

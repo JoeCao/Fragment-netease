@@ -26,8 +26,8 @@
                         android:layout_weight="1" />
 
                     <fragment
-                        android:id="@+id/content_fragment"
-                        android:name="fragment_content.Contentfragment"
+                        android:id="@+id/book_list_fragment"
+                        android:name="fragment_content.BookListFragment"
                         style="@style/layout_vertical"
                         android:layout_weight="8" />
                 </LinearLayout>
