@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 17
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.gracker.tabfragment"
+        applicationId "com.qianmi.news"
         minSdkVersion 11
-        targetSdkVersion 21
+        targetSdkVersion 18
     }
 
     buildTypes {
@@ -23,6 +23,10 @@ android {
     }
     lintOptions {
         abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 }
 

@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.qianmi.R;
 import com.qianmi.utils.utils.Common;
-import com.gracker.tabfragment.R;
 import com.qianmi.model.News;
 
 import junit.framework.Assert;
