@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="default_text">#ff454545</color>
+    <color name="divider_day">#ffdddddd</color>
+    <color name="image_loading_bg">#ffefefef</color>
+    <color name="item_title_disabled">#ff888888</color>
+    <color name="item_title_normal">#ff444444</color>
+    <color name="ss_comment_time">#ff999999</color>
+    <color name="item_local">#ffffffff</color>
+    <color name="item_abstract_normal">#ff444444</color>
+    <color name="item_abstract_disabled">#ff929292</color>
+    <color name="feed_hint_pressed">#ffeaeaea</color>
+    <color name="feed_hint_normal">#fff0f0f0</color>
+    <color name="default_text_night">#ff747474</color>
+    <color name="white">#ffffffff</color>
+</resources>

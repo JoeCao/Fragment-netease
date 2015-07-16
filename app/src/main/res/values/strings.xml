@@ -21,4 +21,6 @@
     <string name="des_img_netease_top">显示主图标</string>
     <string name="des_img_netease_weather">显示天气图标</string>
 
+    <string name="favorite_btn_delete">删除</string>
+
 </resources>
