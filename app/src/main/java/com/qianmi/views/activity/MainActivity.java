@@ -11,9 +11,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
+import com.qianmi.R;
 import com.qianmi.fragment.NewsFragment;
 import com.qianmi.utils.utils.MoveBg;
-import com.gracker.tabfragment.R;
 
 import com.qianmi.fragment.BookDetailFragment;
 import com.qianmi.fragment.TopBarFragment;

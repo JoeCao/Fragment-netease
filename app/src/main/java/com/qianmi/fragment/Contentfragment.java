@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.gracker.tabfragment.R;
+import com.qianmi.R;
+
 
 public class Contentfragment extends Fragment {
 
