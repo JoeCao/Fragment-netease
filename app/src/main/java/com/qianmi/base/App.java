@@ -1,4 +1,4 @@
-package com.base;
+package com.qianmi.base;
 
 import android.app.Application;
 

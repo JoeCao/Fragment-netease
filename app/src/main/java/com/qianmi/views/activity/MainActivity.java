@@ -1,4 +1,4 @@
-package com.gracker.tabfragment;
+package com.qianmi.views.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,11 +11,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-import com.and.netease.utils.MoveBg;
+import com.qianmi.utils.utils.MoveBg;
+import com.gracker.tabfragment.R;
 
-import fragment_content.BookDetailFragment;
-import fragment_content.BookListFragment;
-import fragment_content.TopBarFragment;
+import com.qianmi.fragment.BookDetailFragment;
+import com.qianmi.fragment.BookListFragment;
+import com.qianmi.fragment.TopBarFragment;
 
 public class MainActivity extends Activity implements BookListFragment.Callbacks{
 
@@ -42,31 +43,31 @@ public class MainActivity extends Activity implements BookListFragment.Callbacks
 
             switch (checkedId) {
                 case R.id.radio_news:
-//                    fragment.changeContent(0);
+//                    com.qianmi.fragment.changeContent(0);
                     fragmentTopic.changeContent(0);
                     MoveBg.moveFrontBg(img, startLeft + paddingLeft, 0, 0, 0);
                     startLeft = paddingLeft;
                     break;
                 case R.id.radio_topic:
-//                    fragment.changeContent(1);
+//                    com.qianmi.fragment.changeContent(1);
                     fragmentTopic.changeContent(1);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth, 0, 0);
                     startLeft = moveWidth;
                     break;
                 case R.id.radio_pic:
-//                    fragment.changeContent(2);
+//                    com.qianmi.fragment.changeContent(2);
                     fragmentTopic.changeContent(2);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 2, 0, 0);
                     startLeft = moveWidth * 2;
                     break;
                 case R.id.radio_follow:
-//                    fragment.changeContent(3);
+//                    com.qianmi.fragment.changeContent(3);
                     fragmentTopic.changeContent(3);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 3, 0, 0);
                     startLeft = moveWidth * 3;
                     break;
                 case R.id.radio_vote:
-//                    fragment.changeContent(4);
+//                    com.qianmi.fragment.changeContent(4);
                     fragmentTopic.changeContent(4);
                     MoveBg.moveFrontBg(img, startLeft, moveWidth * 4, 0, 0);
                     startLeft = moveWidth * 4;

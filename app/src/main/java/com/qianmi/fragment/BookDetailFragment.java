@@ -1,10 +1,9 @@
-package fragment_content;
+package com.qianmi.fragment;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -14,10 +13,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.and.netease.utils.Common;
-import com.gracker.tabfragment.MainActivity;
+import com.qianmi.utils.utils.Common;
 import com.gracker.tabfragment.R;
-import com.model.News;
+import com.qianmi.model.News;
 
 import junit.framework.Assert;
 

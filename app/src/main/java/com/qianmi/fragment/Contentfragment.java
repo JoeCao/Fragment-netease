@@ -1,4 +1,4 @@
-package fragment_content;
+package com.qianmi.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 import com.gracker.tabfragment.R;
 
-public class TopBarFragment extends Fragment {
-    TextView mTextView;
+public class Contentfragment extends Fragment {
+
+    TextView mTextView; // 显示的内容
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,14 +28,14 @@ public class TopBarFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        //super.onCreateView(inflater, container, savedInstanceState);
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_topbar, container, false);
+        // super.onCreateView(inflater, container, savedInstanceState);
+        // Inflate the layout for this com.qianmi.fragment
+        return inflater.inflate(R.layout.fragment_content, container, false);
     }
 
     public void changeContent(int index) {
         mTextView = (TextView) getActivity().findViewById(
-                R.id.fragment_topbar_topic);
+                R.id.fragment_context_context);
         switch (index) {
             case 0:
                 mTextView.setText(R.string.news_top_left_text);
@@ -55,4 +56,5 @@ public class TopBarFragment extends Fragment {
                 break;
         }
     }
+
 }

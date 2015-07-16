@@ -1,4 +1,4 @@
-package com.model;
+package com.qianmi.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

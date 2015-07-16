@@ -1,4 +1,4 @@
-package com.and.netease.utils;
+package com.qianmi.utils.utils;
 
 import cn.trinea.android.common.service.impl.ImageCache;
 import cn.trinea.android.common.util.CacheManager;

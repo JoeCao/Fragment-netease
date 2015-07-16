@@ -1,4 +1,4 @@
-package fragment_content;
+package com.qianmi.fragment;
 
 import android.app.Activity;
 import android.app.ListFragment;
@@ -8,31 +8,21 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import com.and.netease.utils.Common;
-import com.and.netease.utils.DownloadTask;
+import com.qianmi.utils.utils.Common;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.gracker.tabfragment.R;
-import com.model.BookContent;
-import com.model.News;
+import com.qianmi.model.News;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import cn.trinea.android.common.service.impl.ImageCache;
-import cn.trinea.android.common.util.CacheManager;
 
 
 /**

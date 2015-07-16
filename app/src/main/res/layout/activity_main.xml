@@ -21,13 +21,13 @@
 
                     <fragment
                         android:id="@+id/content_fragment_top"
-                        android:name="fragment_content.TopBarFragment"
+                        android:name="com.qianmi.fragment.TopBarFragment"
                         style="@style/layout_vertical"
                         android:layout_weight="1" />
 
                     <fragment
                         android:id="@+id/book_list_fragment"
-                        android:name="fragment_content.BookListFragment"
+                        android:name="com.qianmi.fragment.BookListFragment"
                         style="@style/layout_vertical"
                         android:layout_weight="8" />
                 </LinearLayout>

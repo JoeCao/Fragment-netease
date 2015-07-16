@@ -1,14 +1,13 @@
-package com.gracker.tabfragment;
+package com.qianmi.views.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.gracker.tabfragment.MainActivity;
 import com.gracker.tabfragment.R;
 
-import fragment_content.BookDetailFragment;
+import com.qianmi.fragment.BookDetailFragment;
 
 /**
  * Description:

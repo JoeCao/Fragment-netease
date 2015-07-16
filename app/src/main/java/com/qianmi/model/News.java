@@ -1,11 +1,4 @@
-package com.model;
-
-import android.util.Log;
-
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVObject;
-import com.avos.avoscloud.AVQuery;
-import com.avos.avoscloud.FindCallback;
+package com.qianmi.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

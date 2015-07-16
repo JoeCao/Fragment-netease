@@ -13,12 +13,12 @@
         android:targetSdkVersion="15" />
 
     <application
-        android:name="com.base.App"
+        android:name="com.qianmi.base.App"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar">
         <activity
-            android:name=".MainActivity"
+            android:name="com.qianmi.views.activity.MainActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BookDetailActivity"></activity>
+        <activity android:name="com.qianmi.views.activity.BookDetailActivity"></activity>
     </application>
 
 </manifest>

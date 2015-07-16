@@ -1,4 +1,4 @@
-package com.and.netease.utils;
+package com.qianmi.utils.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
