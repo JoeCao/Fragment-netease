@@ -12,13 +12,13 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import com.qianmi.utils.utils.Common;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.gracker.tabfragment.R;
 import com.qianmi.model.News;
+import com.qianmi.utils.utils.Common;
 
 import java.util.HashMap;
 import java.util.List;
@@ -36,7 +36,7 @@ import java.util.Map;
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
-public class BookListFragment extends ListFragment {
+public class NewsFragment extends ListFragment {
     private Callbacks mCallbacks;
 
 
@@ -86,7 +86,7 @@ public class BookListFragment extends ListFragment {
         super.onAttach(activity);
         if (!(activity instanceof Callbacks)) {
             throw new IllegalStateException(
-                    "BookListFragment need a callback");
+                    "NewsFragment need a callback");
         }
         mCallbacks = (Callbacks) activity;
     }

@@ -27,7 +27,7 @@
 
                     <fragment
                         android:id="@+id/book_list_fragment"
-                        android:name="com.qianmi.fragment.BookListFragment"
+                        android:name="com.qianmi.fragment.NewsFragment"
                         style="@style/layout_vertical"
                         android:layout_weight="8" />
                 </LinearLayout>
